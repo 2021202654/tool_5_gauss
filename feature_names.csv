@@ -1,0 +1,16 @@
+feature_name
+defect_concentration
+doping_concentration
+temperature
+layers
+sample_length
+substrate_type_Au
+substrate_type_Cu
+substrate_type_Ni
+substrate_type_SiO2
+substrate_type_Suspended
+defect_type_Adatom
+defect_type_Line-Defect
+defect_type_Pristine
+defect_type_Stone-Wales
+defect_type_Vacancy
