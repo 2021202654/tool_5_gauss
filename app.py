@@ -27,7 +27,7 @@ with st.sidebar:
     
     api_key = st.text_input("输入 API Key", type="password", help="请输入你的豆包/OpenAI API Key")
     base_url = st.text_input("Base URL", value="https://ark.cn-beijing.volces.com/api/v3")
-    model_name = st.text_input("模型名称", value="doubao-seed-1-6-251015") 
+    model_name = st.text_input("模型名称", value="deepseek-v3-2-251201") 
     
     st.divider()
     
@@ -87,4 +87,5 @@ if prompt_input := st.chat_input("请输入你的科研问题..."):
         except Exception as e:
             st.error(f"发生错误: {str(e)}")
             # 如果出错，可能是 Key 变了导致连接断开，清除缓存重试
+
             st.cache_resource.clear()
