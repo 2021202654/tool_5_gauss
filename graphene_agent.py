@@ -43,7 +43,7 @@ def build_agent(api_key, base_url, model_name):
         #### 2. 📊 数据对比分析
         | 指标 | 数值 (W/mK) | 说明 |
         | :--- | :--- | :--- |
-        | **XGBoost 预测值** | [数值] | 基于微观结构特征的统计学习预测 |
+        | **GPR 预测值** | [数值] | 基于高斯过程回归(GPR)的统计预测与不确定性分析 |
         | **K-C 理论上限** | [数值] | 基于 Klemens-Callaway 模型的声子散射极限 |
         
         #### 3. ⚙️ 参数审计
@@ -85,4 +85,5 @@ def build_agent(api_key, base_url, model_name):
         early_stopping_method="generate"
     )
     
+
     return agent_executor
